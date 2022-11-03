@@ -1,0 +1,12 @@
+E:\MiniProjects\HttpServerConsole\Server.Itself\bin\Debug\net6.0\Server.Itself.deps.json
+E:\MiniProjects\HttpServerConsole\Server.Itself\bin\Debug\net6.0\Server.Itself.dll
+E:\MiniProjects\HttpServerConsole\Server.Itself\bin\Debug\net6.0\Server.Itself.pdb
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.csproj.AssemblyReference.cache
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.GeneratedMSBuildEditorConfig.editorconfig
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.AssemblyInfoInputs.cache
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.AssemblyInfo.cs
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.csproj.CoreCompileInputs.cache
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.dll
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\refint\Server.Itself.dll
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\Server.Itself.pdb
+E:\MiniProjects\HttpServerConsole\Server.Itself\obj\Debug\net6.0\ref\Server.Itself.dll

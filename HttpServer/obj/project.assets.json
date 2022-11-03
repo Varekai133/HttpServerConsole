@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Server.Itself/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Server.Itself.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Server.Itself.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Server.Itself/1.0.0": {
+      "type": "project",
+      "path": "../Server.Itself/Server.Itself.csproj",
+      "msbuildProject": "../Server.Itself/Server.Itself.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Server.Itself >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Kat\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\MiniProjects\\HttpServerConsole\\HttpServer\\HttpServerConsole.csproj",
+      "projectName": "HttpServerConsole",
+      "projectPath": "E:\\MiniProjects\\HttpServerConsole\\HttpServer\\HttpServerConsole.csproj",
+      "packagesPath": "C:\\Users\\Kat\\.nuget\\packages\\",
+      "outputPath": "E:\\MiniProjects\\HttpServerConsole\\HttpServer\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Kat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "E:\\MiniProjects\\HttpServerConsole\\Server.Itself\\Server.Itself.csproj": {
+              "projectPath": "E:\\MiniProjects\\HttpServerConsole\\Server.Itself\\Server.Itself.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
