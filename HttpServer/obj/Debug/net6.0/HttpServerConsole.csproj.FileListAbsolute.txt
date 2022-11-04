@@ -31,3 +31,4 @@ E:\MiniProjects\HttpServerConsole\HttpServer\obj\Debug\net6.0\ref\HttpServerCons
 E:\MiniProjects\HttpServerConsole\HttpServer\bin\Debug\net6.0\Server.Itself.dll
 E:\MiniProjects\HttpServerConsole\HttpServer\bin\Debug\net6.0\Server.Itself.pdb
 E:\MiniProjects\HttpServerConsole\HttpServer\obj\Debug\net6.0\HttpServerConsole.csproj.CopyComplete
+E:\MiniProjects\HttpServerConsole\HttpServer\bin\Debug\net6.0\Newtonsoft.Json.dll

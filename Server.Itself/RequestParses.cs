@@ -1,6 +1,6 @@
 namespace Server.Itself;
 
-internal static class RequestParses {
+internal static class RequestParser {
     public static Request Parse(string header) {
         // TODO: Exceptions
         var split = header.Split(" ");
@@ -8,7 +8,7 @@ internal static class RequestParses {
     }
 
     public static HttpMethod GetMethod(string method) {
-        //Just for test
+        // Just for test
         // TODO: Normal method parser
         if (method == "GET")
             return HttpMethod.Get;

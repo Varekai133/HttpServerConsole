@@ -14,8 +14,15 @@ public class ServerHost {
 
         while (true) {
             var client = listener.AcceptTcpClient();
-            using (var stream = client.GetStream()) {
-                _handler.Handle(stream);
+            using (var stream = client.GetStream()) 
+            using (var reader = new StreamReader(stream)){
+                var firstLine = reader.ReadLine();
+                for (string line = null; line != string.Empty; line = reader.ReadLine())
+                    ;
+
+                var request = RequestParser.Parse(firstLine);
+            
+                _handler.Handle(stream, request);
             }
         }
     }

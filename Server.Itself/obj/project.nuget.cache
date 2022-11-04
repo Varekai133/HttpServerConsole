@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xyMmjow5jontzqlUjz8mexNKK9oGpcGlnUH/LFtjTCZfRi4scvHrksAVfRK7mAXmbk0p58vgTsOUOyX3a8dv8g==",
+  "dgSpecHash": "CQb1VeM/MCWSkIUVtXPQbViavxi4nUCfvLBfQ6qBY9xTB7Lmo1oG1vkfqDZFNfbFsUBM6sMKsKLa0WI3/feOMw==",
   "success": true,
   "projectFilePath": "E:\\MiniProjects\\HttpServerConsole\\Server.Itself\\Server.Itself.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Kat\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
