@@ -3,8 +3,9 @@ using System.Net.Sockets;
 
 namespace Server.Itself;
 public class ServerHost {
-    public ServerHost() {
-        
+    private readonly IHandler _handler;
+    public ServerHost(IHandler handler) {
+        _handler = handler;
     }
 
     public void Start() {
@@ -14,14 +15,7 @@ public class ServerHost {
         while (true) {
             var client = listener.AcceptTcpClient();
             using (var stream = client.GetStream()) {
-                using (var reader = new StreamReader(stream))
-                using (var writer = new StreamWriter(stream)) {
-                    for (string line = null; line != string.Empty; line = reader.ReadLine()) {
-                        Console.WriteLine(line);
-                    }
-
-                    writer.Write("Hello from server!");
-                }
+                _handler.Handle(stream);
             }
         }
     }

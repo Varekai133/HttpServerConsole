@@ -8,7 +8,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ServerHost serverHost = new ServerHost();
+        ServerHost serverHost = new ServerHost(new StaticFileHandler(Path.Combine(Environment.CurrentDirectory, "www")));
         serverHost.Start();
     }
 }
