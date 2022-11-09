@@ -29,7 +29,7 @@ public class ControllersHandler : IHandler{
         if (name.EndsWith("controller", StringComparison.InvariantCultureIgnoreCase))
             name = name.Substring(0, name.Length - "controller".Length);
         if (method.Name.Equals("Index", StringComparison.InvariantCultureIgnoreCase))
-            return name;
+            return "/" + name;
         return "/" + name + "/" + method.Name;
     }
 
