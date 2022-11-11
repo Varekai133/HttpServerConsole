@@ -34,7 +34,7 @@ public class ControllersHandler : IHandler{
     }
 
     public void Handle(Stream stream, Request request) {
-        if (_routes.TryGetValue(request.Path, out var func))
+        if (!_routes.TryGetValue(request.Path, out var func))
             ResponseWriter.WriteStatus(HttpStatusCode.NotFound, stream);
         else {
             ResponseWriter.WriteStatus(HttpStatusCode.OK, stream);
