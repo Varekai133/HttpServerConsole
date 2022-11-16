@@ -6,9 +6,9 @@ using Server.Itself;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static async Task Main(string[] args)
     {
         ServerHost serverHost = new ServerHost(new ControllersHandler(typeof(Program).Assembly));
-        serverHost.Start();
+        await serverHost.StartV2();
     }
 }

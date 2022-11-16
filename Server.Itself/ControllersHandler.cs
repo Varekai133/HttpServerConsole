@@ -42,6 +42,15 @@ public class ControllersHandler : IHandler{
         }
     }
 
+    public async Task HandleAsync(Stream stream, Request request) {
+        if (!_routes.TryGetValue(request.Path, out var func))
+            await ResponseWriter.WriteStatusAsync(HttpStatusCode.NotFound, stream);
+        else {
+            await ResponseWriter.WriteStatusAsync(HttpStatusCode.OK, stream);
+            await WriteControllerResponseAsync(func(), stream);
+        }
+    }
+
     private void WriteControllerResponse(object response, Stream stream) {
         if (response is string str) {
             using var writer = new StreamWriter(stream, leaveOpen: true);
@@ -51,5 +60,20 @@ public class ControllersHandler : IHandler{
             stream.Write(buffer, 0, buffer.Length);
         else
             WriteControllerResponse(JsonConvert.SerializeObject(response), stream);
+    }
+
+    private async Task WriteControllerResponseAsync(object response, Stream stream) {
+        if (response is string str) {
+            using var writer = new StreamWriter(stream, leaveOpen: true);
+            writer.Write(str);
+        }
+        else if (response is byte[] buffer)
+            stream.Write(buffer, 0, buffer.Length);
+        else if (response is Task task) {
+            await task;
+            await WriteControllerResponseAsync(task.GetType().GetProperty("Result").GetValue(task), stream);
+        }
+        else
+            await WriteControllerResponseAsync(JsonConvert.SerializeObject(response), stream);
     }
 }
